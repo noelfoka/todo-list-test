@@ -1,0 +1,61 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "\"To-do-list\" is a tool built with ES6 and webpack.",
+  "private": true,
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack",
+    "serve": "webpack serve",
+    "start": "webpack serve --open",
+    "deploy": "webpack && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bornittah/to-do-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bornittah/to-do-list/issues"
+  },
+  "homepage": "https://github.com/Bornittah/to-do-list#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.1",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-localstorage-mock": "^2.4.21",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "lodash": "^4.17.21"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "resetMocks": false,
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ],
+    "verbose": true,
+    "testEnvironment": "jsdom"
+  }
+}

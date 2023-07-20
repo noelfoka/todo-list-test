@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(46, 46, 46);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 40%;
+  margin: 5% 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  background: #fff;
+}
+
+.line {
+  border: 0.2px solid #e8e8e9;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 0.2px solid #e8e8e9;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 0.2px solid #e8e8e9;
+}
+
+form input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+form button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  display: none;
+  font-size: 1.2rem;
+}
+
+.textarea.line-through {
+  text-decoration: line-through;
+}
+
+form input::placeholder {
+  font-style: italic;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 4px 24px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2px solid #e8e8e9;
+}
+
+.form-group {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group input {
+  margin-right: 5px;
+}
+
+.form-group textarea {
+  padding: 5px;
+  width: 90%;
+  display: inline-block;
+  border: none;
+  resize: none;
+  outline-width: 0.2px;
+}
+
+.action-icons i {
+  margin: 0 12px;
+}
+
+.footer {
+  padding: 12px;
+  background: #f3f3f3;
+}
+
+.footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
